@@ -1,23 +1,43 @@
-/vendor/
-node_modules/
-npm-debug.log
-yarn-error.log
+#do not push settings files
+/configurations/ossn.config.db.php
+/configurations/ossn.config.site.php
 
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
+#do not include following files
+/components/*
+/cache
+/installation/INSTALLED
+/.htaccess
+Thumbs.db
+Desktop.ini
+DISPLAY_ERRORS
+error_log
 
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
+#do not ignore ossn core components
+!/components/OssnAds
+!/components/OssnBlock
+!/components/OssnComments
+!/components/OssnEmbed
+!/components/OssnGroups
+!/components/OssnInvite
+!/components/OssnLikes
+!/components/OssnMessages
+!/components/OssnNotifications
+!/components/OssnPhotos
+!/components/OssnPoke
+!/components/OssnProfile
+!/components/OssnSearch
+!/components/OssnSitePages
+!/components/OssnSmilies
+!/components/OssnWall
+!/components/OssnChat
+!/components/OssnSounds
+!/components/OssnAutoPagination
+!/components/OssnMessageTyping
+!/components/OssnRealTimeComments
+!/components/OssnPostBackground
+!/components/OssnGiphy
 
-# Laravel 5 & Lumen specific with changed public path
-public_html/storage
-public_html/hot
-
-storage/*.key
-.env
-Homestead.yaml
-Homestead.json
-/.vagrant
-.phpunit.result.cache
+#do not ignore config files
+!/.scrutinizer.yml
+!/.travis.yml
+!.gitignore
